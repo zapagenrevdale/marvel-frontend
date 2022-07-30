@@ -1,0 +1,51 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    margin: 0;
+    padding: 1vw 4%;
+    background-image: linear-gradient(to bottom, #292929, transparent);
+}
+
+.logo {
+    height: 100%;
+    width: auto;
+
+}
+
+@media (min-width: 0px) {
+    .header {
+        height: 1em;
+    }
+}
+
+@media (min-width: 640px) {
+
+}
+
+@media (min-width: 768px) {
+    .header {
+        height: 1.5em;
+    }
+}
+
+@media (min-width: 1024px) {
+
+}
+
+@media (min-width: 1280px) {
+    .header {
+        height: 2.5em;
+    }
+}
+
+@media (min-width: 1536px) {
+
+}
