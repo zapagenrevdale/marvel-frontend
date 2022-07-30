@@ -1,0 +1,29 @@
+
+.main-button {
+    border-radius: 0.4rem;
+    padding: 0.7vw 2.5vw;
+    border: 0;
+    font-weight: bold;
+    font-size: 1.1vw;
+    display: flex;
+    column-gap: 0.8em;
+    align-items: center;
+    font-family: 'Netflix Sans', Arial, sans-serif;
+}
+
+.play {
+
+}
+
+.details {
+    color: white;
+    background-color: rgba(113, 113, 122, 0.9);
+}
+
+.details:hover {
+    background-color: rgba(113, 113, 122, 0.7);
+}
+
+.play:hover {
+    background-color: rgba(206, 200, 197, 1);
+}
