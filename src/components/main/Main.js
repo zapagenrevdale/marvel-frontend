@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import style from "./Main.module.css";
 import Summary from "./subcomponents/Summary";
-import Container from "./subcomponents/Container";
+import Container from "./subcomponents/layout/Container";
 import RatedInfo from "./subcomponents/RatedInfo";
 
 
