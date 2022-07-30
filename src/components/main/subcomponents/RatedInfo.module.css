@@ -1,0 +1,20 @@
+.info {
+    position: absolute;
+    width: 6%;
+    background-color: #52525260;
+    height: 2.5vw;
+    right: 0;
+    bottom: 40%;
+    border-left-width: 0.3rem;
+    border-left-style: solid;
+    border-left-color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+}
+
+.rated-paragraph {
+    color: white;
+    font-size: 1.2vw;
+    font-weight: 200;
+}
