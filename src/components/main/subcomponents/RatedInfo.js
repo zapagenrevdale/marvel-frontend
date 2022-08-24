@@ -1,18 +1,12 @@
 import React from "react";
 import style from "./RatedInfo.module.css";
 
-
-const RatedInfo = () => {
-
-
-
-    return (
-      <div className={style.info}>
-          <p className={style["rated-paragraph"]}>
-              13 +
-          </p>
-      </div>
-    );
-}
+const RatedInfo = (props) => {
+  return (
+    <div className={style.info}>
+      <p className={style["rated-paragraph"]}>{props.rating}</p>
+    </div>
+  );
+};
 
 export default RatedInfo;
