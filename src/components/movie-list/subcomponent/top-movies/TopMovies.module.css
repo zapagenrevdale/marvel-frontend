@@ -1,8 +1,10 @@
 .header {
-    color: #e5e5e5;
-    margin-bottom: 0.8vw;
+  color: #e5e5e5;
+  margin-bottom: 0.8vw;
 }
 
 .container {
-    height: auto
+  height: auto;
+  padding-left: 3.5%;
+  position: relative;
 }
