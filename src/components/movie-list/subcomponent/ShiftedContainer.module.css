@@ -1,11 +1,9 @@
 .container {
-    position: relative;
-    min-height: 200px;
-    background-color: transparent;
-    padding: 0; 
-    margin: 0;
-    top: -1vw;
-  }
-  
-  
-  
+  position: relative;
+  min-height: 200px;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  top: -6vw;
+  padding-left: 3.5%;
+}

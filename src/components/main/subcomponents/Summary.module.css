@@ -1,7 +1,7 @@
 .summary {
     width: 36%;
     height: auto;
-    margin-left: 4%;
+    margin-left: 3.5%;
 }
 
 .summary-text {
@@ -11,6 +11,7 @@
     line-height: 1.4vw;
     font-size: 1.05vw;
     font-weight: 200;
+    padding: 1vw 0; 
 }
 
 .button-container {
