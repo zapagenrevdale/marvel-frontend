@@ -2,8 +2,7 @@ import React from "react";
 import style from "./Summary.module.css";
 import Button from "./buttons/Button";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faPlay} from '@fortawesome/free-solid-svg-icons'
-import {faCircleInfo} from '@fortawesome/free-solid-svg-icons'
+import {faPlay, faCircleInfo} from '@fortawesome/free-solid-svg-icons'
 
 const Summary = (props) => {
 
