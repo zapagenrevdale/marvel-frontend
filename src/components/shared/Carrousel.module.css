@@ -1,0 +1,6 @@
+.carrousel {
+    display: flex;
+    column-gap: 0.5vw;
+    overflow: hidden;
+    padding-right: 1vw;
+}
