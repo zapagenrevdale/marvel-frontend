@@ -3,11 +3,15 @@
     column-gap: 0.5vw;
     overflow: hidden;
     padding-right: 1vw;
+    padding-bottom: 2vw;
+    padding-top: 2vw;
+    margin-top: 0.8vw;
+    padding-left: 3.5%;
 }
 
 .slide__Button{
     position: absolute;
-    bottom: 0;
+    top: 2.7vw;
     height: 13.65vw;
     width: 3vw;
     border: none;

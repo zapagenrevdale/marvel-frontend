@@ -20,10 +20,10 @@ const Carrousel = (props) => {
     index: 0,
   });
 
-  const [hover, setHover] = useState({});
+  const [hover, setHover] = useState(false);
 
   // important note:
-  //    The author used the constant 0.995 as a result of the flex column-gap set
+  //    The author used the constant 0.96 as a result of the flex column-gap (0.5%) set and the 3.5% left padding
   //    in this component's css module
 
   const scroll = useCallback(
@@ -34,7 +34,7 @@ const Carrousel = (props) => {
       let scrollLocation = slide.scrollLocation;
 
       if (type === "NEXT") {
-        scrollLocation += clientWidth * 0.995;
+        scrollLocation += clientWidth * 0.96;
         carrouselRef.current.scrollTo({
           top: 0,
           left: scrollLocation,
@@ -49,7 +49,7 @@ const Carrousel = (props) => {
       } else if (type === "PREV") {
         carrouselRef.current.scrollTo({
           top: 0,
-          left: (scrollLocation -= clientWidth * 0.995),
+          left: (scrollLocation -= clientWidth * 0.96),
           behavior: "smooth",
         });
         scrollLocation = Math.max(0, scrollLocation);
