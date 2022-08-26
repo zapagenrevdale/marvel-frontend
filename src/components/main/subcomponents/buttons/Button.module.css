@@ -1,6 +1,6 @@
 
 .main-button {
-    border-radius: 0.4rem;
+    border-radius: 0.3vw;
     padding: 0.7vw 2.5vw;
     border: 0;
     font-weight: bold;
@@ -9,10 +9,6 @@
     column-gap: 0.8em;
     align-items: center;
     font-family: 'Netflix Sans', Arial, sans-serif;
-}
-
-.play {
-
 }
 
 .details {
