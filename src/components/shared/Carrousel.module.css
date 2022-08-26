@@ -4,3 +4,46 @@
     overflow: hidden;
     padding-right: 1vw;
 }
+
+.slide__Button{
+    position: absolute;
+    bottom: 0;
+    height: 13.65vw;
+    width: 3vw;
+    border: none;
+    background-color: transparent;
+    color: transparent;
+}
+
+.slide__Button:hover {
+    color: white;
+    transition: background-color 0.3s ease;
+    background-color: rgba(30,30,30, 0.45);
+}
+
+.slide__Hover {
+    color: white;
+    transition: background-color 0.3s ease;
+    background-color: rgba(30,30,30, 0.2);
+}
+
+
+.left{
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+
+.icon {
+    height: 1.6vw;
+    width: auto;
+}
+
+.icon:hover {
+    height: 2.25vw;
+    width: auto;
+    padding: 4vw 0;
+}
