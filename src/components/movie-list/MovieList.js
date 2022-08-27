@@ -17,7 +17,7 @@ const MovieList = () => {
   const inFinitySaga = useMemo(() => {
     return movieContext.movies.filter(
       (movie) => movie.saga === "Infinity Saga"
-    );
+    ).sort((movie1, movie2) => movie2.release_date > movie1.release_date? -1: 1);
   }, [movieContext.movies]);
 
   const multiverseSaga = useMemo(() => {
