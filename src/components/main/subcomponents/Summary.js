@@ -8,7 +8,10 @@ const Summary = (props) => {
 
     return (
         <section className={style.summary}>
-            <p className={style["summary-text"]}>
+            <h1 className={style.summary__Title}>
+                {props.title}
+            </h1>
+            <p className={style.summary__Text}>
                 {props.overview}
             </p>
             <div className={style["button-container"]}>
