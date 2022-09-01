@@ -1,8 +1,6 @@
 .container {
   position: relative;
-  height: 100vh;
+  height: auto;
   background-color: #141414;
-  padding: 0;
-  margin: 0;
   box-shadow: 0 0 4vw 4vw #141414;
 }
