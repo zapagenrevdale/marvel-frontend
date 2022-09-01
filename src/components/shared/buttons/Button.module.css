@@ -23,3 +23,7 @@
 .play:hover {
     background-color: rgba(206, 200, 197, 1);
 }
+
+.play__thin{
+    padding: 0.4vw 2.5vw;
+}

@@ -8,6 +8,8 @@ const Button = (props) => {
         classes += ` ${style.play}`;
     }else if(props.type === 'details'){
         classes += ` ${style.details}`;
+    }else if(props.type === 'play-thin'){
+        classes += ` ${style.play__thin}`;
     }else{
         classes += '';
     }
