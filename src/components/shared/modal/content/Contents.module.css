@@ -1,0 +1,76 @@
+.image {
+  width: 100%;
+  height: 28vw;
+  object-fit: cover;
+  filter: blur(0.05vw);
+}
+
+.preview__Title {
+  color: white;
+  font-size: 2vw;
+  padding: 1.1vw 0;
+}
+
+.imdb__rating {
+  color: #46d369;
+}
+
+.pg__rating {
+  border: 1px solid hsla(0, 0%, 100%, 0.4);
+  padding: 0 0.4vw;
+}
+
+.plot {
+  line-height: 1.4vw;
+}
+
+.tag__label {
+  color: #777777;
+}
+
+.tag__content {
+  line-height: 1vw;
+}
+
+.stream__Container {
+  padding-top: 2vw;
+  padding-bottom: 1vw;
+}
+
+.stream__list {
+  display: flex;
+  justify-content: center;
+  column-gap: 2vw;
+}
+
+.stream__Icon {
+  height: 3vw;
+  width: auto;
+}
+
+.stream__Item {
+  padding: 1.2vw;
+  display: flex;
+  column-gap: 1vw;
+  align-items: center;
+}
+
+.streamSite__Link {
+  font-size: 0.8vw;
+  color: #f59e0b;
+  text-decoration: none;
+}
+
+.streamSite__Link:hover {
+  font-size: 0.8vw;
+}
+
+
+
+.widget__Container {
+  position: absolute;
+  bottom: 18%;
+  height: auto;
+  left: 6%;
+  width: 40%;
+}

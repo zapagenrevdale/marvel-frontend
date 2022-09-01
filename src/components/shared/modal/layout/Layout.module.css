@@ -1,0 +1,80 @@
+.modal__Container {
+  top: 3vh;
+  left: 25%;
+  width: 50%;
+  z-index: 100;
+  position: fixed;
+  height: auto;
+  box-shadow: rgb(0 0 0 / 75%) 0px 3px 10px;
+  border-radius: 0.6vw;
+  overflow: hidden;
+  background-color: #141414;
+}
+
+.image__Container {
+  width: 100%;
+  position: relative;
+}
+
+
+.widget__Container {
+  position: absolute;
+  bottom: 18%;
+  height: auto;
+  left: 6%;
+  width: 40%;
+}
+
+
+.details__Container {
+  box-shadow: 0 0 2.5vw 3.5vw #141414;
+  position: relative;
+  padding: 0 6%;
+  color: white;
+  font-size: 1vw;
+  font-weight: 200;
+  height: auto;
+}
+
+.metadata__Container {
+  display: flex;
+  column-gap: 2.5vw;
+}
+
+.left__metadata__Container {
+  width: 66%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.2vw;
+}
+
+.metadata__Div {
+  display: flex;
+  column-gap: 0.5vw;
+  font-weight: bold;
+}
+
+.right__metadata__Container {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.2vw;
+}
+
+.tags__Div {
+  font-size: 0.8vw;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.7vw;
+}
+
+.stream__Container {
+  padding-top: 2vw;
+  padding-bottom: 1vw;
+}
+
+.stream__Div {
+  display: flex;
+  justify-content: center;
+  column-gap: 2vw;
+}
