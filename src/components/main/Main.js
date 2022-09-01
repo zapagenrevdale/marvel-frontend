@@ -78,8 +78,8 @@ const Main = () => {
         allowFullScreen
       ></iframe>
       <Container>
-        <Summary overview={featured.imdb["Plot"]} title={featured.imdb.Title}/>
-        <RatedInfo rating={featured.imdb["Rated"]} />
+        <Summary featured={featured}/>
+        <RatedInfo rating={featured.imdb.Rated} />
       </Container>
     </main>
   );
