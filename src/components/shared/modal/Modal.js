@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useCallback } from "react";
 import style from "./Modal.module.css";
 import ReactDOM from "react-dom";
 
@@ -22,39 +22,41 @@ import {
   MetaDataContent,
   PlotContent,
   TagContent,
-  StreamContent
-} from "./content/Contents"
+  StreamContent,
+} from "./content/Contents";
 
 const Backdrop = (props) => {
   return <div className={style.backdrop} onClick={props.closeModal} />;
 };
 
-
 const ModelOverlay = (props) => {
   return (
     <ModalContainer>
       <ImageContainer>
-        <ImageContent title={props.movie.title} />
+        <ImageContent
+          title={props.movie.title}
+          backgroundUrl={props.movie.background_url}
+        />
       </ImageContainer>
       <DetailsContainer>
         <MetaDataContainer>
           <LeftMetadaContainer>
             <MetaDataDiv>
               <MetaDataContent
-                rating={props.movie.imdb.imdbRating}
-                year={props.movie.imdb.Year}
-                rated={props.movie.imdb.Rated}
-                runtime={props.movie.imdb.Runtime}
+                rating={props.movie.imdb.rating}
+                year={props.movie.imdb.yaer}
+                rated={props.movie.imdb.rated}
+                runtime={props.movie.duration}
               />
             </MetaDataDiv>
-            <PlotContent plot={props.movie.imdb.Plot} />
+            <PlotContent plot={props.movie.imdb.plot} />
           </LeftMetadaContainer>
           <RightMetaDataContainer>
             <TagsDiv>
               <TagContent
-                actors={props.movie.imdb.Actors}
-                genres={props.movie.imdb.Genre}
-                awards={props.movie.imdb.Awards}
+                actors={props.movie.imdb.actors}
+                genres={props.movie.imdb.genre}
+                awards={props.movie.imdb.awards}
               />
             </TagsDiv>
           </RightMetaDataContainer>
@@ -62,7 +64,7 @@ const ModelOverlay = (props) => {
         <StreamContainer>
           <h3>Available On:</h3>
           <StreamDiv>
-          <StreamContent />
+            <StreamContent stream_sites={props.movie.stream_sites} />
           </StreamDiv>
         </StreamContainer>
       </DetailsContainer>
@@ -73,9 +75,20 @@ const ModelOverlay = (props) => {
 const Modal = () => {
   const modalContext = useContext(ModalContext);
 
-  const closeModal = () => {
+  const closeModal = useCallback(() => {
     modalContext.toggleModal(undefined);
-  };
+  }, [modalContext]);
+
+  useEffect(() => {
+    function handleEscapeKey(event) {
+      if (event.code === "Escape") {
+        closeModal();
+      }
+    }
+
+    document.addEventListener("keydown", handleEscapeKey);
+    return () => document.removeEventListener("keydown", handleEscapeKey);
+  }, [closeModal]);
 
   return (
     <>
