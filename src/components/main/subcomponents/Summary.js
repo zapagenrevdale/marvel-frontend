@@ -11,10 +11,10 @@ const Summary = (props) => {
     return (
         <section className={style.summary}>
             <h1 className={style.summary__Title}>
-                {props.featured.imdb.Title}
+                {props.featured.title}
             </h1>
             <p className={style.summary__Text}>
-                {props.featured.imdb.Plot}
+                {props.featured.imdb.plot}  
             </p>
             <div className={style["button-container"]}>
                 <Button type="play">

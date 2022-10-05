@@ -16,7 +16,7 @@ const MovieList = () => {
     return movieContext.movies
       .sort(
         (movie1, movie2) =>
-          parseFloat(movie2.imdb.Metascore) - parseFloat(movie1.imdb.Metascore)
+          parseFloat(movie2.imdb.metascore) - parseFloat(movie1.imdb.metascore)
       )
       .slice(0, 25);
   }, [movieContext.movies]);
