@@ -44,7 +44,7 @@ const Carrousel = (props) => {
           prevDisabled: false,
           nextDisabled: scrollLocation >= widthLimit,
           scrollLocation: scrollLocation,
-          index: slide.index + 1,
+          index: Math.min(slide.index + 1, props.movies.length),
         });
       } else if (type === "PREV") {
         carrouselRef.current.scrollTo({
@@ -57,7 +57,7 @@ const Carrousel = (props) => {
           scrollLocation: scrollLocation,
           prevDisabled: scrollLocation === 0,
           nextDisabled: false,
-          index: slide.index - 1,
+          index: Math.max(slide.index - 1, 0),
         });
       }
     },
