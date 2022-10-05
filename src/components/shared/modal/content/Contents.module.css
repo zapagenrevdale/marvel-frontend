@@ -2,7 +2,7 @@
   width: 100%;
   height: 28vw;
   object-fit: cover;
-  filter: blur(0.05vw);
+  filter: blur(0.04vw);
 }
 
 .preview__Title {

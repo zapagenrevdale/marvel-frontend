@@ -28,7 +28,12 @@ export const StreamItem = (props) => {
       <FontAwesomeIcon icon={props.icon} className={style.stream__Icon} />
       <div>
         <p className={style.streamSite__Text}>{props.streamSite}</p>
-        <a href={props.url || "#"} className={style.streamSite__Link}>
+        <a
+          href={props.href || "#"}
+          className={style.streamSite__Link}
+          target="_blank"
+          rel="noreferrer"
+        >
           Watch Now <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
         </a>
       </div>
@@ -39,7 +44,7 @@ export const StreamItem = (props) => {
 export const ImageContent = (props) => {
   return (
     <>
-      <img src="dummy.jpg" alt="" className={style.image} />
+      <img src={props.backgroundUrl} alt="" className={style.image} />
       <ImageWidgetContainer>
         <p className={style.preview__Title}>{props.title}</p>
         <Button type="play-thin">
@@ -56,7 +61,7 @@ export const MetaDataContent = (props) => {
       <span className={style.imdb__rating}>{props.rating} IMDb Rating</span>
       <span> {props.year}</span>
       <span className={style.pg__rating}>{props.rated}</span>
-      <span>{props.runtime}</span>
+      <span>{props.runtime} min</span>
     </>
   );
 };
@@ -75,12 +80,24 @@ export const TagContent = (props) => {
   );
 };
 
-export const StreamContent = () => {
+export const StreamContent = (props) => {
   return (
     <>
-      <StreamItem streamSite="Youtube" icon={faYoutube} />
-      <StreamItem streamSite="Google Play" icon={faGooglePlay} />
-      <StreamItem streamSite="Apple TV" icon={faApple} />
+      <StreamItem
+        streamSite="Youtube"
+        icon={faYoutube}
+        href={props.stream_sites[0]?.link}
+      />
+      <StreamItem
+        streamSite="Google Play"
+        icon={faGooglePlay}
+        href={props.stream_sites[1]?.link}
+      />
+      <StreamItem
+        streamSite="Apple TV"
+        icon={faApple}
+        href={props.stream_sites[2]?.link}
+      />
     </>
   );
 };
